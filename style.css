@@ -24,7 +24,17 @@
 
 body{
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+}
+
+#app{
     width: 1440px;
+    margin-top: 50px;
+    background-color: var(--white);
 }
 
 nav{
@@ -32,7 +42,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 1440px;
     margin-top: 3%;
 }
 
@@ -80,7 +90,7 @@ nav>ul>li>a{
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
+    height: 785px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,6 +123,15 @@ nav>ul>li>a{
     height: 600px;
 }
 
+.grid-section p{
+    line-height: 25px;
+}
+
+.grid-element{
+    width: 720px;
+    height: 600px;
+}
+
 h2{
     font-family: 'Fraunces';
     font-weight: 900;
@@ -136,7 +155,6 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 720px;
 }
 
 .grid-right{
@@ -144,7 +162,6 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 720px;
 }
 
 .grid-left>img, .grid-right>img{
@@ -163,18 +180,153 @@ p{
 
 #graphic-design{
     background-image: url(./images/desktop/image-graphic-design.jpg);
-    height: 100vh;
+}
+
+#graphic-design h2{
+    color: var(--dark-desaturated-cyan);
+}
+
+#graphic-design p{
+    color: var(--dark-moderate-cyan);
 }
 
 #photography{
-    height: 100vh;
-    background-image: url(./images/desktop/image-photography.jpg);
+    background-image: url(./images/desktop/image-photography.jpg);  
+}
+
+#photography h2{
+    color: var(--dark-blue);
+}
+
+#photography p{
+    color: var(--dark-blue);
+}
+
+.grid-element-bottom{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.grid-element-bottom h2{
+    margin-top: 400px;
 }
 
 .clients-review{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.reviews-container{
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 1440px;
+    height: 550px;
+}
+
+.clients-review h1{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--grayish-blue);
+    margin-top: 160px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.clients-review h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+}
+
+.review>img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 65px;
+}
+
+.review p{
+    width: 80%;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.review h3{
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--grayish-blue);
+}
+
+.footer-images{
+    display: flex;
+}
+
+.footer-images>img{
+    width: 25%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 343px;
+    align-items: center;
+    background-color: #90D4C5;
+}
+
+footer>svg{
+    align-self: center;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul{
+    display: flex;
+    margin: 40px 0;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.navigation a{
+    color: var(--dark-desaturated-cyan);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 20px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    align-self: center;
+}
+
+.attribution{
+    font-size: 15px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0;
 }
