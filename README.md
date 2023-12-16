@@ -36,8 +36,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/seg1-exe/sunnyside-agency)
-- Live Site URL: [Add live site URL here](https://seg1-exe.github.io/sunnyside-agency/)
+- Solution URL: [Github](https://github.com/seg1-exe/sunnyside-agency)
+- Live Site URL: [Github pages](https://seg1-exe.github.io/sunnyside-agency/)
 
 ## My process
 
