@@ -33,7 +33,6 @@ body{
 
 #app{
     width: 1440px;
-    margin-top: 50px;
     background-color: var(--white);
 }
 
@@ -74,15 +73,24 @@ nav>ul>li>a{
 
 #nav-contact{
     font-weight: 700;
+    font-size: 14px;
     background-color: var(--white);
     padding: 15px 30px;
     border-radius: 30px;
+    text-transform: uppercase;
 }
 
 #nav-contact>a{
     color: var(--dark-blue);
     font-family: 'Fraunces', sans-serif;
-    
+}
+
+#nav-contact:hover{
+    background-color: #6FCFFF;
+}
+
+#nav-contact:hover>a{
+    color: var(--white);
 }
 
 .top{
@@ -170,13 +178,53 @@ p{
 }
 
 .learn-more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learn-more a{
     font-family: 'Fraunces';
     font-weight: 700;
     text-align: left;
+    font-size: 14px;
     color: var(--very-dark-desaturated-blue);
     text-decoration: none;
     cursor: pointer;
+    text-transform: uppercase;
+    z-index: 3;
 }
+
+.learn-more-underline{
+    position: absolute;
+    top: 1235px;
+    z-index: 2;
+    width: 110px;
+    height: 10px;
+    border-radius: 10px;
+    display: block;
+    background-color: #FBEEB3;
+}
+
+.learn-more-underline-red{
+    position: absolute;
+    top: 1850px;
+    z-index: 2;
+    width: 110px;
+    height: 10px;
+    border-radius: 10px;
+    display: block;
+    background-color: #FFDBD5;
+}
+
+.learn-more-underline:hover{
+    background-color: var(--yellow);
+}
+
+.learn-more-underline-red:hover{
+    background-color: var(--soft-red);
+}
+
 
 #graphic-design{
     background-image: url(./images/desktop/image-graphic-design.jpg);
@@ -302,7 +350,7 @@ footer>svg{
 
 .navigation ul{
     display: flex;
-    margin: 40px 0;
+    margin: 60px 0;
     justify-content: space-between;
     width: 300px;
 }
@@ -316,6 +364,10 @@ footer>svg{
     margin-bottom: 20px;
 }
 
+.navigation a:hover{
+    color: var(--white);
+}
+
 .social-media{
     display: flex;
     justify-content: space-between;
@@ -323,10 +375,26 @@ footer>svg{
     align-self: center;
 }
 
+.social-media>i{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: var(--dark-desaturated-cyan);
+}
+
+.social-media>i:hover{
+    color: var(--white);
+}
+
 .attribution{
     font-size: 15px;
     font-family: 'Barlow', sans-serif;
+    color: var(--dark-desaturated-cyan);
     font-weight: 600;
     text-align: center;
-    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.attribution a{
+    color: var(--dark-desaturated-cyan);
 }
